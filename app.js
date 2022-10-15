@@ -24,12 +24,10 @@ app.listen(3000,()=>{
     console.log("server corriendo pa");
 })
 
-app.set("views", './views')
+app.set("views", "./views")
 
 //Defino el motor para express
-app.set("view engine", "ejs")
-
-module.exports = cont;
+app.set("view engine", "pug")
 
 
 

@@ -4,7 +4,7 @@ const router = express.Router();
 const Contenedor = require('../objects/Contenedor.class');
 let cont = new Contenedor("products.json");
 
-router.get('/',(req, res)=>{
+router.get('/mostrarProductos',(req, res)=>{
     const prods = cont.getAll();
     res.render("mostrarProductos", {prods})
     // return res.status(200).json(prods);
